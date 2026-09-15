@@ -62,11 +62,16 @@ export default function Home() {
                 height={20}
                 className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2"
               />
-              <input
-                type="text"
-                defaultValue="15.09.2026 11:00"
-                className="w-full rounded-xl border border-border bg-input py-3 pl-11 pr-10 text-main outline-none"
-              />
+              <select
+                defaultValue="11:00"
+                className="w-full appearance-none rounded-xl border border-border bg-input py-3 pl-11 pr-10 text-main outline-none"
+              >
+                <option value="09:00">15.09.2026 09:00</option>
+                <option value="11:00">15.09.2026 11:00</option>
+                <option value="13:00">15.09.2026 13:00</option>
+                <option value="15:00">15.09.2026 15:00</option>
+                <option value="17:00">15.09.2026 17:00</option>
+              </select>
               <Image
                 src="/main/chevron.svg"
                 alt=""
