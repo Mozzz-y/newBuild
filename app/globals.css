@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Цвета страницы — меняйте здесь, чтобы обновить весь интерфейс */
+:root {
+  --bg: #f9f8f8;
+  --surface: #f5f3f3;
+  --input: #ffffff;
+  --border: #e8e6e6;
+  --text: #1a1a1a;
+  --text-muted: #9a9a9a;
+  --text-label: #8a8a8a;
+  --button: #2f2f2f;
+  --button-text: #ffffff;
+}
+
+/* Подключаем цвета к Tailwind (классы bg-page, text-main и т.д.) */
+@theme inline {
+  --color-page: var(--bg);
+  --color-surface: var(--surface);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-main: var(--text);
+  --color-muted: var(--text-muted);
+  --color-label: var(--text-label);
+  --color-button: var(--button);
+  --color-button-text: var(--button-text);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
