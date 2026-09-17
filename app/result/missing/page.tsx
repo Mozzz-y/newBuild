@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ChartPlaceholder from "../chart-placeholder";
 
 export default function ResultMissingPage() {
   return (
@@ -9,7 +10,9 @@ export default function ResultMissingPage() {
           Сравниваем данные по плану и результат анализа снимка. Ниже - сводная таблица по технике.
         </p>
 
-        <div className="mt-8 overflow-hidden rounded-2xl bg-surface">
+        <ChartPlaceholder />
+
+        <div className="mt-6 overflow-hidden rounded-2xl bg-surface">
           <div className="grid grid-cols-3 gap-4 px-4 py-3 text-sm text-label">
             <span>Техника</span>
             <span>По плану</span>
